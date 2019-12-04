@@ -1,7 +1,9 @@
 import 'package:andromeda/constants.dart';
+import 'package:andromeda/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:andromeda/components/rounded_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'chat_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
 
@@ -95,7 +97,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 //print(email);
                 //print(password);
                 //Navigator.pushNamed(context, RegistrationScreen.id);
-               final newUser=  await _auth.createUserWithEmailAndPassword(email: email, password: password)    ;    },
+              try{ final newUser=  await _auth.createUserWithEmailAndPassword(email: email, password: password)    ;
+              if(newUser!=null){Navigator.pushNamed(context, ChatScreen.id);}}
+              catch(e){
+                print(e);
+              }},
             ),
           ],
         ),
@@ -103,3 +109,4 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
   }
 }
+
