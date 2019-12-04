@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "93484527542",
+    "firebase_url": "https://andromeda-86f0a.firebaseio.com",
+    "project_id": "andromeda-86f0a",
+    "storage_bucket": "andromeda-86f0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93484527542:android:3c60a3f0f64876f2b19b17",
+        "android_client_info": {
+          "package_name": "io.atultiwari.andromeda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93484527542-5d9mr1udco989bga1dt4e3bl72qmb413.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNWzY1HGvDeaMNVG2FkaQiOMHJngnuBdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93484527542-5d9mr1udco989bga1dt4e3bl72qmb413.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
